@@ -2,10 +2,36 @@
 
 A tiny wrapper for plink.exe just for faking vscode's [remote ssh extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh)
 
+## How to build
+
+The tool can be build under Windows, Linux or Mac. Every build script will create a 32-bit and 64-bit version in the build directory.
+
+### Under Windows
+
+With PowerShell:
+
+```powershell
+.\build.ps1
+```
+
+With CMD Script:
+
+```cmd
+.\build.cmd
+```
+
+### Under Linux or Mac
+
+```bash
+./build.sh
+```
+
 ## How to use
 
-1. go build & put ssh2plink.exe on the plink.exe's location
-2. Set "Remote.SSH: Path" setting on the Remote-SSH extention's settings to "(Your location of plink/ssh2plink)/ssh2plink.exe"
+For the 64bit version:
+
+1. Put `ssh2plink_64bit.exe` on the `plink.exe`'s location
+2. Set "`Remote.SSH: Path`" setting on the Remote-SSH extention's settings to "`<Your location of plink/ssh2plink>/ssh2plink_64bit.exe`"
 
 ## Known issue
 
