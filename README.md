@@ -8,6 +8,7 @@ A tiny wrapper for plink.exe just for faking vscode's [remote ssh extension](htt
 2. Set "Remote.SSH: Path" setting on the Remote-SSH extention's settings to "(Your location of plink/ssh2plink)/ssh2plink.exe"
 
 ## Known issue
+
 * Can't connect to new host with error messages below (Connect with putty and store key in cache beforehand.)
 
 ```txt
@@ -22,5 +23,5 @@ If you want to carry on connecting just once, without
 adding the key to the cache, enter "n".
 If you do not trust this host, press Return to abandon the
 connection.
-Store key in cache? (y/n) 
+Store key in cache? (y/n)
 ```
